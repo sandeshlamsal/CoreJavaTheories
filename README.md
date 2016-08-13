@@ -28,7 +28,7 @@ Technically, Encapsulation is defining private variables and provide public gett
 Encapsulation is a process of binding or wrapping the data and the codes that operates on the data into a single entity. This keeps the data safe from outside interface and misuse.
 
 2. Inheritance (sharing properties and methods of classes)
-3. Polymorphism (same code diff behaviour, eg:- saving,current  account, but getMinBal() will give diff output)
+3. Polymorphism (same code,method diff behaviour, eg:- saving,current  account, but getMinBal() will give diff output)
 4. Abstraction (hiding the complexities showing only the method,interface)
 5. All predefined types are objects (int i=0; is not valid but not in java)
 6. All operations are performed by sending messages to objects
@@ -37,6 +37,8 @@ Encapsulation is a process of binding or wrapping the data and the codes that op
 Polymorphism
 -------------
 http://www.javahelps.com/2015/02/oop-polymorphism.html
-
+2 types
+1. method overloading(compile time), change in  method parameters
+2. method overriding(run time), needs inheritence to support, here the parents methods are written in child class with @override annotion for child implementation.
 
 
