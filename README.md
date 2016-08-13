@@ -23,6 +23,7 @@ is java pure object oriented language?
 Java is not because it supports Primitive datatype such as int, byte, long... etc, to be used, which are not objects.
 
 There are seven qualities to be satisfied for a programming language to be pure Object Oriented. They are:
+
 1. Encapsulation/Data binding (using private to properties of class to bound the properites,methods to that class only)
 Technically, Encapsulation is defining private variables and provide public getter and setter methods to access them. 
 Encapsulation is a process of binding or wrapping the data and the codes that operates on the data into a single entity. This keeps the data safe from outside interface and misuse.
