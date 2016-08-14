@@ -83,5 +83,62 @@ varaible can' be changed the value
 method can't be overriden
 class can't be extended
 
+INTERFACE (represent actions, but class represent noun)
+--------
+-represent common actions,method in between classes
+to implement classes own way.
+
+-implemented class for interface should write all its methods
+- public static final is default for interface and methods signature are only there, can't implement them in interface
+
+eg: class aeroplane implements fly{
+    @override // the interface fly
+    void dofly(){
+     //aeroplane flying
+    }
+    }
+
+    class bird implements fly{
+    @override // the interface fly
+    void dofly(){
+     //bird flying
+    }
+    }
+    
+    interface fly{//as both aeroplane and bird can fly
+        void dofly();
+     }
+
+eg: Runnable, 
+
+-multiple iterfaces can be implemeted by class
 
 
+ABSTRACT CLASS
+--------------
+- its instance can't be created, means new keyword can't used to instantiated abstract class
+- public static final are allowed
+- in a class only one class can be extended at a time. 
+- can have abstract or general methods defined. if abstract method it cant be implemented just defined like interfaces
+but for normal methods it can be implemented.
+
+ANONYMOUS CLASS
+---------------
+class which are inner class can that is used just for once, then u don't have to provide name for the class.
+there is ; in the end fo class structure is anonymous class
+
+
+class ProgrammerInterview  {
+ public void read() {
+  System.out.println("Programmer Interview!");
+ }
+}
+class Website {
+/*  This creates an anonymous inner class: */
+ProgrammerInterview pInstance = new ProgrammerInterview() {
+  public void read() {
+   System.out.println("anonymous ProgrammerInterview");
+  }
+ };
+}
+Well, the main thing is that it is quicker to just create an anonymous inner class rather than create a new separate class.Anonymous inner classes are especially useful when you only need to override a small amount of functionality (like just one method) in a superclass, and don’t want to deal with the overhead of creating an entire class for something so simple.
