@@ -142,3 +142,20 @@ ProgrammerInterview pInstance = new ProgrammerInterview() {
  };
 }
 Well, the main thing is that it is quicker to just create an anonymous inner class rather than create a new separate class.Anonymous inner classes are especially useful when you only need to override a small amount of functionality (like just one method) in a superclass, and don’t want to deal with the overhead of creating an entire class for something so simple.
+
+WRAPPER CLASSES  (immutable like String)
+--------------
+class representing the primitive date type.
+
+if you want to use no,float using srting use WRAPPER classes.
+named Camel case to primitive data type.
+
+eg: Integer for int, Float for float
+
+Integer ten=new Integer(10);
+ten++; //valid statement
+
+Variable Arguments passsing
+--------------------------
+3 dots used
+public int sum(int... numbers)
