@@ -43,3 +43,30 @@ http://www.javahelps.com/2015/02/oop-polymorphism.html
 2. method overriding(run time), needs inheritence to support, here the parents methods are written in child class with @override annotion for child implementation.
 
 
+PassBy Value vs PassByRefernce
+------------------------------
+if primitive variables are passed eg: ind i=10; add(i);  is passed by value
+
+if object is passed then reference is passed eg: 
+classTest{int i}
+Test t=new Test(), t.i=10; add(t);
+
+
+Instance and Class
+------------------
+if a object is created then its a instance of a class eg: Bank nbl=new Bank(); nbl is an instance
+
+Instance vs Static variable
+---------------------------
+static variable is in class level. it can be accessed with class name it self. do not need instance for class 
+to be created to use it.
+
+instance variable if not declared any variable without static it can be accesed through instance
+
+eg: class Bank{
+static int name;
+}
+Bank.name="nbl"; ok can be done
+
+
+
