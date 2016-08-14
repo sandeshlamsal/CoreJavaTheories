@@ -70,6 +70,18 @@ Bank.name="nbl"; ok can be done
 
 Access Modifiers
 ----------------
+Variables or methods have access modifiers
+
+1.default : int a; //can be access to classes and sub-classes in same packages.
+2.public : public int a; //can be access to all classes  in all packages
+3.private : private int a; //can't access from out side the class
+4.protected: //can be access to classes and sub-classes in in all packages.
+
+Final (variable, method, class)
+----------------------------
+varaible can' be changed the value
+method can't be overriden
+class can't be extended
 
 
 
