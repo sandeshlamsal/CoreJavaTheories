@@ -159,3 +159,7 @@ Variable Arguments passsing
 --------------------------
 3 dots used
 public int sum(int... numbers)
+
+SERIALIZATION
+-------------
+Serialization in java is a mechanism of (writing the state of an object into a byte stream). It is mainly used in Hibernate, RMI, JPA, EJB, JMS technologies. The reverse operation of serialization is called deserialization(byte stream to object). so that objects(file,classes) can be transfered to wire. The String class and all the wrapper classes implements java.io.Serializable interface by default.
