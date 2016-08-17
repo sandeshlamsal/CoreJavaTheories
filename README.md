@@ -162,4 +162,10 @@ public int sum(int... numbers)
 
 SERIALIZATION
 -------------
-Serialization in java is a mechanism of (writing the state of an object into a byte stream). It is mainly used in Hibernate, RMI, JPA, EJB, JMS technologies. The reverse operation of serialization is called deserialization(byte stream to object). so that objects(file,classes) can be transfered to wire. The String class and all the wrapper classes implements java.io.Serializable interface by default.
+Serialization in java is a mechanism of (writing the state of an object into a byte stream). It is mainly used in Hibernate, RMI, JPA, EJB, JMS technologies. The reverse operation of serialization is called deserialization(byte stream to object). so that objects(file,classes) can be transfered to wire. The String class and all the wrapper classes implements java.io.Serializable interface by default.To travel object's state on the network (known as marshaling)
+
+If a serializable class does not explicitly declare a serialVersionUID, then the serialization runtime will calculate a default serialVersionUID value for that class based on various aspects of the class, as described in the Java(TM) Object Serialization Specification. However, it is strongly recommended that all serializable classes explicitly declare serialVersionUID values, since the default serialVersionUID computation is highly sensitive to class details that may vary depending on compiler implementations, and can thus result in unexpected InvalidClassExceptions during deserialization. Therefore, to guarantee a consistent serialVersionUID value across different java compiler implementations, a serializable class must declare an explicit serialVersionUID value. It is also strongly advised that explicit serialVersionUID declarations use the private modifier where possible, since such declarations apply only to the immediately declaring class--serialVersionUID fields are not useful as inherited members.
+
+private static final long serialVersionUID = -7467864054698729101L;
+
+
