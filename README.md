@@ -162,7 +162,7 @@ public int sum(int... numbers)
 
 SERIALIZATION
 -------------
-Serialization in java is a mechanism of (writing the state of an object into a byte stream). It is mainly used in Hibernate, RMI, JPA, EJB, JMS technologies. The reverse operation of serialization is called deserialization(byte stream to object). so that objects(file,classes) can be transfered to wire. The String class and all the wrapper classes implements java.io.Serializable interface by default.To travel object's state on the network (known as marshaling)
+Serialization in java is a mechanism of writing the state of an (object into a byte stream). It is mainly used in Hibernate, RMI, JPA, EJB, JMS technologies. The reverse operation of serialization is called deserialization(byte stream to object). so that objects(file,classes) can be transfered to wire. The String class and all the wrapper classes implements java.io.Serializable interface by default.To travel object's state on the network (known as marshaling)
 
 If a serializable class does not explicitly declare a serialVersionUID, then the serialization runtime will calculate a default serialVersionUID value for that class based on various aspects of the class, as described in the Java(TM) Object Serialization Specification. However, it is strongly recommended that all serializable classes explicitly declare serialVersionUID values, since the default serialVersionUID computation is highly sensitive to class details that may vary depending on compiler implementations, and can thus result in unexpected InvalidClassExceptions during deserialization. Therefore, to guarantee a consistent serialVersionUID value across different java compiler implementations, a serializable class must declare an explicit serialVersionUID value. It is also strongly advised that explicit serialVersionUID declarations use the private modifier where possible, since such declarations apply only to the immediately declaring class--serialVersionUID fields are not useful as inherited members.
 
@@ -191,4 +191,12 @@ I=interface
 2.2 SortedMap ->NavigableMap(I) -> TreeMap
 2.3 HashTable (Dictionary is parent for HashTable)
 
+THREADS/SYNCHRONIZATION
+-----------------------
+Thread safety in java is the process to make our program safe to use in multithreaded environment, there are different ways through which we can make our program thread safe.
 
+-Synchronization is the easiest and most widely used tool for thread safety in java.
+-Use of Atomic Wrapper classes from java.util.concurrent.atomic package. For example AtomicInteger
+-Use of locks from java.util.concurrent.locks package.
+-Using thread safe collection classes, check this post for usage of ConcurrentHashMap for thread safety.
+-Using volatile keyword with variables to make every thread read the data from memory, not read from thread cache.
