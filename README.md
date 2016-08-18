@@ -169,3 +169,26 @@ If a serializable class does not explicitly declare a serialVersionUID, then the
 private static final long serialVersionUID = -7467864054698729101L;
 
 
+COLLECTION FRAMEWORK
+--------------------
+I=interface
+1.Collection(I)  //to represent group of objects to identify as single entity collection inerface is used
+1.1  List (I)// allowed duplicate, insertion order maintained of objects 
+    1.1.1 ArrayList(C) 
+    1.1.2 LinkedList(C)
+    1.1.3 Vector
+    1.1.4 Stack 
+    
+1.2  Set(I) //not allowed duplicate, order of insertion not required
+    1.2.1 HashSet -> LinkedHashSet
+    1.2.2 SortedSet(I)->NavigableSet(I)->TreeSet(C)
+1.3  Queue //before processing if wants collection then queue (eg: SMS queue before sending)
+    1.3.1 PriorityQueue
+    1.3.1 BlockingQueue
+    
+2.Map(I)  //if want to store group of objects as not single entity but KEY,VALUE pair Map is used
+2.1 Hasmap  -> LinkedHashMap
+2.2 SortedMap ->NavigableMap(I) -> TreeMap
+2.3 HashTable (Dictionary is parent for HashTable)
+
+
