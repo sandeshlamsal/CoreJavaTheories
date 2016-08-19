@@ -57,6 +57,17 @@ http://www.journaldev.com/4098/java-heap-space-vs-stack-memory
 
 Heap = larger size, created for object, slower memory
 Stack= smaller size, created for function, variables, objects references are ketp, faster memory
+Each thread gets a stack.
+
+STACK=localvariable+functions
+HEAP=objects+ static+ instance variable
+
+Variables defined inside methods, constructors or blocks are called local variables
+
+Instance variables are given default values, ie null if it's an object reference, 0 if it's an int.
+
+Local variables don't get default values, and therefore need to be explicitly initialized (and the compiler usually complains/warns if you fail to do this).
+
 
 
 Instance and Class
