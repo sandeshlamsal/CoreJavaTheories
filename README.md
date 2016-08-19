@@ -1,6 +1,6 @@
 # CoreJavaTheories
 Nite : Giving example of bank and finance is the best
-
+http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 
 platform independent
 -------------------
