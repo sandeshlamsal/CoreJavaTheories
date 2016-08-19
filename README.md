@@ -51,6 +51,13 @@ if object is passed then reference is passed eg:
 classTest{int i}
 Test t=new Test(), t.i=10; add(t);
 
+Heap vs Stack (Imp)
+-----------------
+http://www.journaldev.com/4098/java-heap-space-vs-stack-memory
+
+Heap = larger size, created for object, slower memory
+Stack= smaller size, created for function, variables, objects references are ketp, faster memory
+
 
 Instance and Class
 ------------------
