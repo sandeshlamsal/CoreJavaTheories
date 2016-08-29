@@ -2,6 +2,8 @@
 Nite : Giving example of bank and finance is the best
 http://tutorials.jenkov.com/java-concurrency/java-memory-model.html
 
+1-3 yrs http://www.instanceofjava.com/ java exp
+
 platform independent
 -------------------
 The .java file is written once in a windows can be compiled 
